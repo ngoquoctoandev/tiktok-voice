@@ -1,5 +1,6 @@
-import requests, base64, random, argparse, os, playsound, time, re, textwrap
+import requests, base64, random, argparse, os, re, textwrap
 from constants import voices
+from playsound3 import playsound
 
 API_BASE_URL = f"https://api16-normal-v6.tiktokv.com/media/api/text/speech/invoke/"
 USER_AGENT = f"com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)"
@@ -52,7 +53,7 @@ def tts(session_id: str, text_speaker: str = "en_us_002", req_text: str = "TikTo
     print(output_data)
 
     if play is True:
-        playsound.playsound(filename)
+        playsound(filename)
         os.remove(filename)
 
     return output_data
@@ -98,7 +99,7 @@ def main():
         play = args.play
 
     if args.voice == None:
-        text_speaker = 'en_us_002'
+        text_speaker = 'en_uk_003'
         print('You need to have a voice! (See README.md)')
 
     if text_speaker == "random":

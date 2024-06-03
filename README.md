@@ -1,6 +1,21 @@
 # TikTok Text-to-speech API
 
+✦ Step 1: Create Python Virtual Environment
+`py -m venv .venv`
+
+✦ Step 2: Activate Python Virtual Environment
+`.\.venv\Scripts\Activate`
+
+✦ Step 3: Install Required Packages
+`pip install -r requirements.txt` or `pip install playsound3 requests`
+
+✦ Step 4: Run the Program
 `python main.py -v en_uk_003 -f input.txt -n en_uk_003.mp3 --session 4fe97859469ba414881fc6bebd53fd1d`
+
+✦ Step 5: Deactivate Python Virtual Environment
+`deactivate`
+
+---
 
 ## FOR DOCUMENTATION, VISIT THE [WIKI](https://github.com/oscie57/tiktok-voice/wiki)
 
