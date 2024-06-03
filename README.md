@@ -4,15 +4,20 @@
 `py -m venv .venv`
 
 ✦ Step 2: Activate Python Virtual Environment
-`.\.venv\Scripts\Activate`
+`.venv\Scripts\activate`
 
-✦ Step 3: Install Required Packages
+✦ Step 3: Upgrade Python Package Manager (pip) and Setuptools
+`py -m pip install --upgrade pip`
+`py -m pip --version`
+`py -m pip install --upgrade setuptools`
+
+✦ Step 4: Install Required Packages
 `pip install -r requirements.txt` or `pip install playsound3 requests`
 
-✦ Step 4: Run the Program
+✦ Step 5: Run the Program
 `python main.py -v en_uk_003 -f input.txt -n en_uk_003.mp3 --session 4fe97859469ba414881fc6bebd53fd1d`
 
-✦ Step 5: Deactivate Python Virtual Environment
+✦ Step 6: Deactivate Python Virtual Environment
 `deactivate`
 
 ---
